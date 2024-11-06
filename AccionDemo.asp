@@ -13,7 +13,7 @@ conn.Open connString
 
 ' Check for errors
 If Err.Number <> 0 Then
-    Response.Write("Connection Error: " & Err.Description)
+    Response.Write("Connection Error occured: " & Err.Description)
     Err.Clear
 Else
     Response.Write("Connected to SQL Server database successfully.")
